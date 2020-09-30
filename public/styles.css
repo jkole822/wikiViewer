@@ -112,12 +112,12 @@ body {
 form {
 	position: absolute;
 	top: 40%;
-	right: 30%;
+	left: 8%;
 }
 
 input {
 	opacity: 0;
-	width: 120%;
+	width: 26vw;
 	color: white;
 	background-color: black;
 	border: none;
