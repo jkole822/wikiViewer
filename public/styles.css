@@ -1,0 +1,166 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Assistant", Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: black;
+}
+
+.main {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: ease 500ms;
+}
+
+.main.shiftUp {
+	top: 12%;
+}
+
+/* Icon */
+.lens {
+	width: 50px;
+	height: 50px;
+	border: solid 5px white;
+	border-radius: 30px;
+	transition: width 500ms;
+}
+
+.lens.expand {
+	width: 33vw;
+}
+
+.handle {
+	position: absolute;
+	left: 60%;
+	top: 58%;
+	width: 5px;
+	height: 25px;
+	background-color: white;
+	transform: rotate(-40deg);
+	border: 2px solid white;
+	border-radius: 10px;
+	transition: 200ms linear;
+}
+
+.handle.disappear {
+	height: 0px;
+	opacity: 0;
+}
+
+.ex1,
+.ex2 {
+	position: absolute;
+	width: 1px;
+	height: 14px;
+	opacity: 0;
+	background-color: white;
+	border: 1.4px solid white;
+	border-radius: 10px;
+	transition: 150ms linear;
+}
+
+.ex1 {
+	top: 0%;
+	right: 18%;
+	transform: rotate(-40deg);
+}
+
+.ex2 {
+	top: 60%;
+	right: 18%;
+	transform: rotate(40deg);
+}
+
+.ex1.appear {
+	top: 41%;
+	right: 10%;
+	opacity: 100;
+}
+
+.ex2.appear {
+	top: 41%;
+	right: 10%;
+	opacity: 100;
+}
+
+.random {
+	margin-bottom: 20px;
+}
+
+/* Text */
+.random a {
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+.direction {
+	color: white;
+	margin-top: 30px;
+}
+
+/* Input */
+form {
+	position: absolute;
+	top: 40%;
+	right: 30%;
+}
+
+input {
+	opacity: 0;
+	width: 120%;
+	color: white;
+	background-color: black;
+	border: none;
+	outline: none;
+}
+
+input.appear {
+	opacity: 100;
+}
+
+/* Results */
+.results {
+	position: absolute;
+	top: 120%;
+	list-style-type: none;
+}
+
+.listResults {
+	background-color: white;
+	margin-bottom: 16px;
+	width: 60vw;
+	padding: 20px;
+	border-top: 8px solid rgb(68, 68, 68);
+	border-radius: 5px;
+	transition: ease 350ms;
+}
+
+.listResults:hover {
+	border-color: rgb(216, 216, 216);
+}
+
+.listResults a {
+	color: black;
+	text-decoration: none;
+}
+
+.title {
+	font-family: "Secular One", Helvetica, sans-serif;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.snippet {
+	font-size: 0.9;
+	text-align: justify;
+}
